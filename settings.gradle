@@ -1,0 +1,2 @@
+rootProject.name='MyApp_audiorec_20200326_2'
+include ':app'

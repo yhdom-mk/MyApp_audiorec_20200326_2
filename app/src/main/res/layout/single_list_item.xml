@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/list_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_play_circle"/>
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Filename"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_date"
+        app:layout_constraintStart_toEndOf="@+id/list_image_view"
+        app:layout_constraintTop_toTopOf="@+id/list_image_view"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/list_image_view"
+        app:layout_constraintTop_toTopOf="@+id/list_image_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
